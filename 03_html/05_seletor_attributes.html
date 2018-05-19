@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Селекторы аттрибутов</title>
+        <meta charset="utf-8">
+<style>
+	[href$='.html']{
+		color: #57e518;
+		text-decoration: none;
+	}
+	[href$='pdf']:hover::after{
+		content: 'pdf';
+		display: inline-block;
+		margin-left: 1rem;
+		padding: 5px;
+		background: black;
+		border-radius: 50%;
+
+	}
+</style>
+</head>
+<body>
+
+<ul>
+	<li><a href="http://google.com" class="item">Google</a></li>
+	<li><a href="file.pdf" class="item">Download file</a></li>
+	<li><a href="catalog.html" class="item">Catalog</a></li>
+</ul>
+</body>
+</html>

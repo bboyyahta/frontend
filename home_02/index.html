@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Создание и продвижение сайтов</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Arimo');
+        .top-menu {
+            background: rgba(255,255,255,.5);
+            box-shadow: 3px 0 7px rgba(0,0,0,.3);
+            padding: 20px;
+        }
+        .top-menu:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .navbar-logo {display: inline-block;}
+        .menu-main {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        .menu-main li {display: inline-block;}
+        .menu-main a {
+            text-decoration: none;
+            display: block;
+            position: relative;
+            line-height: 61px;
+            padding-left: 20px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-family: 'Arimo', sans-serif;
+            font-weight: bold;
+            color: #C44737;
+            transition:.3s linear;
+            margin-top: -10px;
+        }
+        .menu-main a:before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            background: #F73E24;
+            position: absolute;
+            left: 50%;
+            transform: rotate(45deg) translateX(6.5px);
+            opacity: 0;
+            transition: .3s linear;
+        }
+        .menu-main a:hover:before {opacity: 1;}
+        @media (max-width: 660px) {
+            .menu-main {
+                float: none;
+                padding-top: 20px;
+            }
+            .top-menu {
+                text-align: center;
+                padding: 20px 0 0 0;
+            }
+            .menu-main a {padding: 0 10px;}
+            .menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+        }
+        @media (max-width: 600px) {
+            .menu-main li {display: block;}
+        }
+        .four {
+            background: #F4F7EE;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .four h1 {
+            font-family: 'Merriweather', serif;
+            position: relative;
+            color: #C44737;
+            font-size: 50px;
+            font-weight: normal;
+            padding: 8px 20px 7px 20px;
+            border-top: 4px solid;
+            border-left: 4px solid;
+            display: inline-block;
+            margin: 0;
+            line-height: 1;
+            float: left;
+            margin-top: -25px;
+        }
+        .four h1:before {
+            content: "";
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            top: -28px;
+            left: -28px;
+            border: 4px solid #C44737;
+            box-sizing: border-box;
+        }
+        @media (max-width: 450px) {
+            .four h1 {font-size: 36px;}
+            .four h1:before {
+                width: 20px;
+                height: 20px;
+                top: -20px;
+                left: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="top-menu">
+    <div class="four"><h1>Создание сайта</h1>
+    <ul class="menu-main">
+        <li><a href="">Главная</a></li>
+        <li><a href="">Статьи</a></li>
+        <li><a href="">Данные пользователя</a></li>
+        <li><a href="">Посты</a></li>
+        <li><a href="">Спонсор</a></li>
+    </ul>
+</nav>
+</div>
+</body>
+</html>
